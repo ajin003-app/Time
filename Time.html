@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="floating-elements"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-main">
+                <div class="logo">
+                    <div class="heart-logo">💝</div>
+                    <div class="logo-text">
+                        <h1>ආදරෙයි මගෙ මැට්ටිට 😊💖</h1>
+                        <p>මගෙ චූටි ගෙම්බි 😊</p>
+                    </div>
+                </div>
+                <div class="current-time-display">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <div class="live-time" id="liveTimeNow">00:00:00</div>
+                        <div class="live-date" id="currentDateNow">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Live Time Counters -->
+        <section class="live-counters-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-clock-rotate-left"></i>
+                    <span>අදට අපි යාළු වෙලා 😌</span>
+                </h2>
+                        </div>
+            
+            <div class="counter-container">
+                <!-- Desktop View (Grid Layout) -->
+                <div class="counter-grid-desktop">
+                    <div class="counter-unit large">
+                        <div class="counter-value" id="yearsSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-star"></i>
+                            Years
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit large">
+                        <div class="counter-value" id="monthsSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-alt"></i>
+                            Months
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit large">
+                        <div class="counter-value" id="daysSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-day"></i>
+                            Days
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile View (Grid Layout) -->
+                <div class="counter-grid-mobile">
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileYearsSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-star"></i>
+                            Years
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileMonthsSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-alt"></i>
+                            Months
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileDaysSince">0</div>
+                        <div class="counter-label">
+                            <i class="fas fa-calendar-day"></i>
+                            Days
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileHoursSince">00</div>
+                        <div class="counter-label">
+                            <i class="fas fa-clock"></i>
+                            Hours
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileMinutesSince">00</div>
+                        <div class="counter-label">
+                            <i class="fas fa-hourglass-half"></i>
+                            Minutes
+                        </div>
+                    </div>
+                    
+                    <div class="counter-unit mobile">
+                        <div class="counter-value" id="mobileSecondsSince">00</div>
+                        <div class="counter-label">
+                            <i class="fas fa-stopwatch"></i>
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detailed Time Row (Desktop) -->
+                <div class="detailed-time-row">
+                    <div class="time-unit-small">
+                        <div class="time-value-small" id="hoursSince">00</div>
+                        <div class="time-label-small">
+                            <i class="fas fa-clock"></i>
+                            Hours
+                        </div>
+                    </div>
+                    
+                    <div class="time-unit-small">
+                        <div class="time-value-small" id="minutesSince">00</div>
+                        <div class="time-label-small">
+                            <i class="fas fa-hourglass-half"></i>
+                            Minutes
+                        </div>
+                    </div>
+                    
+                    <div class="time-unit-small">
+                        <div class="time-value-small" id="secondsSince">00</div>
+                        <div class="time-label-small">
+                            <i class="fas fa-stopwatch"></i>
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Start Date Display -->
+                <div class="start-date-display">
+                    <i class="fas fa-heart-circle"></i>
+                    <span>Our journey began on <strong>Dec 12, 2025</strong></span>
+                    <i class="fas fa-heart-circle"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <div class="countdown-header">
+                <h2>
+                    <i class="fas fa-hourglass-half"></i>
+                    අවුරුද්දකට තව 😌👇
+                </h2>
+                <p class="subtitle">මේ දවස එනකනුත් මම ආසවෙන් බලන් ඉන්නෙ මැණික 😊💖</p>
+            </div>
+            
+            <div class="countdown-display">
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countYears">0</div>
+                    <div class="unit-label">Years</div>
+                </div>
+                
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countMonths">0</div>
+                    <div class="unit-label">Months</div>
+                </div>
+                
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countDays">0</div>
+                    <div class="unit-label">Dates</div>
+                </div>
+                
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countHours">00</div>
+                    <div class="unit-label">Hours</div>
+                </div>
+                
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countMinutes">00</div>
+                    <div class="unit-label">minutes</div>
+                </div>
+                
+                <div class="countdown-unit">
+                    <div class="unit-value" id="countSeconds">00</div>
+                    <div class="unit-label">seconds</div>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Time Progress</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating Hearts Container -->
+    <div id="heartsContainer"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
